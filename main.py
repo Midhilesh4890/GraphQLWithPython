@@ -23,3 +23,6 @@ gql = '''
 if __name__ == '__main__':
     result = schema.execute(gql)
     print(result)
+    print(result.errors)
+    print(result.data['hello'])
+    print(result.data['query'])
